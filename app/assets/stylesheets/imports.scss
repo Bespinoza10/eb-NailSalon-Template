@@ -1,0 +1,9 @@
+$verde: #549d9d;
+$gris: #e5e5e5;
+@import "materialize";
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
