@@ -1,6 +1,7 @@
 $verde: #549d9d;
 $gris: #e5e5e5;
 @import "materialize";
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,700i,900');
 @mixin transition($transition...) {
   -moz-transition:    $transition;
   -o-transition:      $transition;

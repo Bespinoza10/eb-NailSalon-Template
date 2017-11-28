@@ -15,3 +15,22 @@
  */
 
  @import "imports";
+ body{
+   font-family: 'Raleway', sans-serif !important;
+ }
+ .navbar-fixed {position: absolute;z-index:999999999;
+  nav{
+    .brand-logo{
+      color: #000;
+    }
+    ul li{
+      background-color: rgba(#000000, 0.27);
+      color: #fff;
+      @include transition(all, .4s);
+      &:hover{
+        background-color: $verde;
+        @include transition(all, .4s);
+      }
+    }
+  }
+ }
