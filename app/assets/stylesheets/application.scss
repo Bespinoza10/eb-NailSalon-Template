@@ -141,7 +141,8 @@
 
   //Media Queries
   @media screen and (max-width: 500px){
-    nav.brand-logo{
-      width: 68%;
+    nav .brand-logo{
+      line-height: normal;
+      padding: 12px;
     }
   }
