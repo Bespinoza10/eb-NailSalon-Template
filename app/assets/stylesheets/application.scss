@@ -52,3 +52,55 @@
   hr{
     border: 1px solid $verde;
   }
+
+  #footer{
+    background: #212121;
+    margin: 0px;
+    color: #fff;
+    .location{
+      padding: 2%;
+      background: $verde;
+      color: #fff;
+      .location-title{
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      p{
+        letter-spacing: 2px;
+      }
+      a{
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+    .hours{
+      padding-top: 2%;
+      .hours-title{
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      p.work-hours{
+        color: $verde;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .bottom-footer{
+    background: #1d1d1d;
+    margin: 0px !important;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    p{
+      color: #fff;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 2px;
+      a{
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
