@@ -38,6 +38,33 @@
         @include transition(all, .4s);
       }
     }
+    ul.side-nav{
+      li{
+        background: none;
+        color: #000;
+        @include transition(all, .4s);
+        &:hover{
+          background-color: $verde;
+          @include transition(all, .4s);
+        }
+        a{
+          @include transition(all, .4s);
+          &:hover{
+            color: #fff;
+            @include transition(all, .4s);
+          }
+        }
+      }
+      li.mobile-menu-title{
+        background: $verde;
+        color: #FFF;
+        h4{
+          font-weight: 700;
+          letter-spacing: 2px;
+          font-size: 18px;
+        }
+      }
+    }
   }
  }
 

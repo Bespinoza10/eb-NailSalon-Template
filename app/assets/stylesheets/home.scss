@@ -26,6 +26,30 @@ header.home-bg{
   }
 }
 
+header.mobile-home-bg{
+  background-image: url('/assets/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  .bg-text{
+    // margin-top: 30%;
+    span{
+      font-style: italic;
+    }
+    h1{
+      font-weight: 900;
+      font-size: 3.2rem;
+      color: #000;
+      letter-spacing: 3px;
+    }
+  }
+}
+
 //contactUsNow section
 #contactUsNow{
   background-image: url('/assets/appt-contact-us.jpg');
