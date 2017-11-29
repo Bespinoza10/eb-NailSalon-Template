@@ -14,25 +14,48 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="<%= root_path %>" class="brand-logo">THE NAIL PARLOR</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse" style="color: #000;"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="<%= root_path%>">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="<%= new_contact_path %>">Contact Us</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li class="mobile-menu-title">
-              <div class="user-view">
-                <h4>THE NAIL PARLOR</h4>
-                <hr>
-              </div>
-            </li>
-            <li><a href="<%= root_path %>">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="mobile.html">Contact Us</a></li>
-          </ul>
+          <a href="#" data-activates="mobile-demo" class="button-collapse" style="color: #000;background: #ffffff75;
+    padding-left: 10px;padding-right: 10px;"><i class="material-icons">menu</i></a>
+
+          <% if current_page?(root_path)%>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="<%= root_path%>">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="<%= new_contact_path %>">Contact Us</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li class="mobile-menu-title">
+                <div class="user-view">
+                  <h4>THE NAIL PARLOR</h4>
+                  <hr>
+                </div>
+              </li>
+              <li><a href="<%= root_path %>">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="<%= new_contact_path %>">Contact Us</a></li>
+            </ul>
+          <%else%>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="<%= root_path%>">Home</a></li>
+              <li><a href="<%= root_path%>#about">About Us</a></li>
+              <li><a href="<%= root_path%>#services">Services</a></li>
+              <li><a href="<%= new_contact_path %>">Contact Us</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li class="mobile-menu-title">
+                <div class="user-view">
+                  <h4>THE NAIL PARLOR</h4>
+                  <hr>
+                </div>
+              </li>
+              <li><a href="<%= root_path %>">Home</a></li>
+              <li><a href="<%= root_path%>#about">About Us</a></li>
+              <li><a href="<%= root_path%>#services">Services</a></li>
+              <li><a href="<%= new_contact_path%>">Contact Us</a></li>
+            </ul>
+           <%end%>
         </div>
       </div>
     </nav>
