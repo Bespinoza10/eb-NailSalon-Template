@@ -57,3 +57,24 @@ header.home-bg{
     }
   }
 }
+
+// Contact Page
+header.contact-bg{
+  background-image: url('/assets/contact-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 50vh;
+  .bg-text{
+    color: #fff;
+  }
+}
+button.verde{
+  background: $verde;
+  color: #fff;
+  letter-spacing: 2px;
+}
