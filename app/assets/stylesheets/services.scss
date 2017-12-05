@@ -1,3 +1,36 @@
 // Place all the styles related to the services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "imports";
+header.mani-pedi-bg{
+  background-image: url('/assets/services/manicure-pedicure-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  .bg-text{
+    // margin-top: 30%;
+    span{
+      font-style: italic;
+    }
+    h1{
+      font-weight: 900;
+      color: #000;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+#manicure-section, #pedicure-section{
+  .manicure-services, .pedicure-services{
+    span{
+     font-weight: 900;
+     color: $rojo;
+    }
+  }
+}

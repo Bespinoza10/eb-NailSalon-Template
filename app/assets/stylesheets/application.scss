@@ -35,7 +35,7 @@
       color: #fff;
       @include transition(all, .4s);
       &:hover{
-        background-color: $verde;
+        background-color: $rojo;
         @include transition(all, .4s);
       }
     }
@@ -45,7 +45,7 @@
         color: #000;
         @include transition(all, .4s);
         &:hover{
-          background-color: $verde;
+          background-color: $rojo;
           @include transition(all, .4s);
         }
         a{
@@ -57,7 +57,7 @@
         }
       }
       li.mobile-menu-title{
-        background: $verde;
+        background: $rojo;
         color: #FFF;
         h4{
           font-weight: 700;
@@ -84,7 +84,7 @@
   }
 
   hr{
-    border: 1px solid $verde;
+    border: 1px solid $rojo;
   }
 
   #footer{
@@ -93,7 +93,7 @@
     color: #fff;
     .location{
       padding: 2%;
-      background: $verde;
+      background: $rojo;
       color: #fff;
       .location-title{
         font-weight: 700;
@@ -114,7 +114,7 @@
         letter-spacing: 2px;
       }
       p.work-hours{
-        color: $verde;
+        color: $rojo;
         font-weight: 400;
         letter-spacing: 2px;
         font-size: 14px;
