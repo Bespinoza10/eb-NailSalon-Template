@@ -9,14 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-
-  <!-- promotion-details-modal -->
-
-
-
   <div class="navbar-fixed">
     <nav class="transparent z-depth-0">
       <% @promotion.each do |p|%>
+        <!-- promotion-details-modal -->
         <div id="promotion-modal" class="modal">
           <div class="modal-content">
             <br>
@@ -24,7 +20,7 @@
             <p><b>Details: </b><%= p.description %></p>
           </div>
           <div class="modal-footer">
-            Click outside the box to exit.
+            <p>Click outside the box to EXIT.</p>
           </div>
         </div>
 
