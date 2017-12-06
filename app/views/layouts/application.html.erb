@@ -9,8 +9,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
+
   <div class="navbar-fixed">
     <nav class="transparent z-depth-0">
+      <% @promotion.each do |p|%>
+       <div class="promotion row">
+         <div class="container">
+          <div class="col s12 m8 l8">
+             <p class="bold"><%= p.title%></p>
+          </div>
+          <div class="col s12 m4 l4">
+            <% if p.description.present? %>
+              button goes here
+            <%end%>
+          </div>
+         </div>
+       </div>
+      <%end%>
       <div class="container">
         <div class="nav-wrapper">
           <a href="<%= root_path %>" class="brand-logo">THE NAIL PARLOR</a>
@@ -22,7 +37,7 @@
               <li><a href="<%= root_path%>">Home</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="<%= new_prmotion_path %>">Services</a></li>
+              <li><a href="<%= new_promotion_path %>">New Promotion</a></li>
               <li><a href="<%= new_contact_path %>">Contact Us</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">

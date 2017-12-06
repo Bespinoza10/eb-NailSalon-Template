@@ -23,11 +23,17 @@
       <%= f.check_box :modal_yes_no, id: "yes", class: "chcBox" %>
       <label for="yes" id="yes">Promotion Popup?</label>
     </div>
-
-    <% if current_page?(:controller => "cities", :action => "new")%>
-    <button type="submit" class="btn blue sendbtn">Create</button>
-    <% elsif current_page?(:controller => "cities", :action => "edit") %>
-    <button type="submit" class="btn blue sendbtn">Update</button>
-    <%end%>
+    <div class="col s12 m8 l6">
+      <br>
+      <br>
+      <% if current_page?(:controller => "promotions", :action => "new")%>
+      <button type="submit" class="btn blue sendbtn">Create</button>
+      <% elsif current_page?(:controller => "promotions", :action => "edit") %>
+      <button type="submit" class="btn blue sendbtn">Update</button>
+      <%end%>
+      <br>
+      <br>
+    </div>
+    <br>
   <%end%>
 </div>
