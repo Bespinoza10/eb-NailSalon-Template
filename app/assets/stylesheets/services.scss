@@ -26,6 +26,30 @@ header.mani-pedi-bg{
   }
 }
 
+
+header.artificial-bg{
+  background-image: url('/assets/services/artificial-nails-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  .bg-text{
+    // margin-top: 30%;
+    span{
+      font-style: italic;
+    }
+    h1{
+      font-weight: 900;
+      color: #000;
+      letter-spacing: 3px;
+    }
+  }
+}
+
 #manicure-section, #pedicure-section{
   .manicure-services, .pedicure-services{
     span{
@@ -34,8 +58,8 @@ header.mani-pedi-bg{
     }
   }
 }
-#addOns{
-  table td.add-on-price{
+#addOns, #artificial-nails{
+  table td.add-on-price, td.artifcial-nails-price{
     font-weight: 700;
     letter-spacing: 1px;
     color: $rojo;
@@ -45,7 +69,7 @@ header.mani-pedi-bg{
 
 // Media Queries
 @media screen and (max-width: 800px){
-  header.mani-pedi-bg{
+  header.mani-pedi-bg, header.artificial-nails-bg{
     background-attachment: scroll;
   }
 }
