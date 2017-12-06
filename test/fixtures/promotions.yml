@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: 
+  modal_yes_no: false
+  topbar_yes_no: false
+
+two:
+  title: MyString
+  description: 
+  modal_yes_no: false
+  topbar_yes_no: false
