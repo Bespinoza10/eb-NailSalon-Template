@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'home#index'
   get "/services/:service" => "services#show"
   resources :contacts, only: [:new, :create]
+  resources :promotions
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

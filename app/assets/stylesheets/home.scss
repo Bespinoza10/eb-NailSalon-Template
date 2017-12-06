@@ -3,6 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "imports";
+// Promotion Section
+#promotion{
+  background: $rojo;
+  color: #fff;
+  p.bold{
+    font-weight: bold;
+    color#fff;
+  }
+}
+
 header.home-bg{
   background-image: url('/assets/home-bg.jpg');
   background-repeat: no-repeat;

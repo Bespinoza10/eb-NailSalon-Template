@@ -1,0 +1,33 @@
+<div class="col-sm-12">
+  <%= form_for @promotion do |f| %>
+    <% if @promotion.errors.any?%>
+      <h2><%= pluralize(@promotion.errors.count, "error") %> prevented this promotion from saving:</h2>
+      <ul>
+        <% @promotion.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <%end%>
+      </ul>
+    <%end%>
+
+    <div class="input-field col s12">
+      <%= f.label "Promotion Title" %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div class="input-field col s12">
+      <%= f.text_field :description, placeholder: "Your Promotion Details" %>
+    </div>
+
+    <div class="input-field col s12">
+      <!-- <%= f.label "Promotion Popup?"%> -->
+      <%= f.check_box :modal_yes_no, id: "yes", class: "chcBox" %>
+      <label for="yes" id="yes">Promotion Popup?</label>
+    </div>
+
+    <% if current_page?(:controller => "cities", :action => "new")%>
+    <button type="submit" class="btn blue sendbtn">Create</button>
+    <% elsif current_page?(:controller => "cities", :action => "edit") %>
+    <button type="submit" class="btn blue sendbtn">Update</button>
+    <%end%>
+  <%end%>
+</div>
