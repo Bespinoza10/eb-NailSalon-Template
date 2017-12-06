@@ -6,7 +6,6 @@
 // Promotion Section
 div.promotion{
   background: $rojo;
-  color: #fff;
   margin: 0px;
   p.bold{
     font-weight: 700;
@@ -14,6 +13,22 @@ div.promotion{
     font-size: 20px;
     color:#fff;
     margin: 0px;
+  }
+  a{
+    background-color: #fff;
+    color: $rojo;
+    &:hover, &:focus{
+      background: #fff;
+      color: $rojo;
+    }
+  }
+}
+#promotion-modal{
+  top: 20% !important;
+  color: #000;
+  h4{
+    font-weight: bold;
+    color: $rojo
   }
 }
 
