@@ -1,5 +1,7 @@
 class PromotionsController < ApplicationController
   before_action :find_promotion, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
   def index
     @promotions = Promotions.all.order("created_at")
   end

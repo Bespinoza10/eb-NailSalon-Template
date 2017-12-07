@@ -7,10 +7,12 @@
    </div>
    <div class="col s12 m4 l4">
      <% if p.description.present? %>
-       <button data-target="promotion-modal" class="btn modal-trigger">View Details</button>
+       <button data-target="promotion-modal" class="btn modal-trigger view-details">View Details</button>
        <!-- <a class="waves-effect waves-light btn modal-trigger" href="#promotion-modal">View Details</a> -->
      <%end%>
-     <%= link_to "Edit", edit_promotion_path(p), class: "btn orange" %>
+     <%if user_signed_in?%>
+       <%= link_to "Edit", edit_promotion_path(p), class: "btn orange" %>
+      <%end%>
    </div>
   </div>
 </div>

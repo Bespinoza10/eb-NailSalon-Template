@@ -1,0 +1,23 @@
+<div id="logIn" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <h4>Sign Up</h4>
+        <br>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field input-field col s12 m4 l4">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true %>
+          </div>
+
+          <div class="field input-field col s12 m4 l4">
+            <%= f.label :password %><br />
+            <%= f.password_field :password, autocomplete: "off" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Log in", class: "btn green" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>

@@ -25,7 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
 #contact controller
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
-
+# For users
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
