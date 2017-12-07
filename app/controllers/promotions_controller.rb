@@ -11,7 +11,7 @@ class PromotionsController < ApplicationController
   def create
     @promotion = Promotion.new promotion_params
     if @promotion.save
-      redirect_to @promotion, notice: "You sucessfully created your promotion."
+      redirect_to root_path, notice: "You sucessfully created your promotion."
     else
       render 'new', notice: "Yikes! Something went wrong. Please try again."
     end
@@ -26,7 +26,7 @@ class PromotionsController < ApplicationController
 
   def update
     if @promotion.update promotion_params
-      redirect_to @promotion, notice: "You have sucessfully updated your promotion."
+      redirect_to root_path, notice: "You have sucessfully updated your promotion."
     else
       render 'edit'
     end

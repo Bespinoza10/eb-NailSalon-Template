@@ -9,39 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
+  <% if rootOrServicesOrContact? %>
+     <%= render :partial => "promotions/promotionModal"%>
+  <%end%>
   <div class="navbar-fixed">
     <nav class="transparent z-depth-0">
-      <% unless rootOrServicesOrContact? %>
-        <% if @promotions.present?%>
-        <%end%>
+      <% if rootOrServicesOrContact? %>
+         <%= render :partial => "promotions/topBarPromotion"%>
       <%else%>
-        <% @promotions.each do |p|%>
-          <!-- promotion-details-modal -->
-          <div id="promotion-modal" class="modal">
-            <div class="modal-content">
-              <br>
-              <h4><%= p.title%></h4>
-              <p><b>Details: </b><%= p.description %></p>
-            </div>
-            <div class="modal-footer">
-              <p>Click outside the box to EXIT.</p>
-            </div>
-          </div>
-
-         <div class="promotion row">
-           <div class="container">
-            <div class="col s12 m8 l8">
-               <p class="bold"><%= p.title%></p>
-            </div>
-            <div class="col s12 m4 l4">
-              <% if p.description.present? %>
-                <a class="waves-effect waves-light btn modal-trigger" href="#promotion-modal">View Details</a>
-              <%end%>
-              <%= link_to "Edit", edit_promotion_path(p), class: "btn orange" %>
-            </div>
-           </div>
-         </div>
-        <%end%>
+         <% if @promotions.present?%>
+         <%end%>
       <%end%>
 
 
@@ -129,8 +106,7 @@
 
 <script type="text/javascript">
   $(".button-collapse").sideNav();
-  $(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+  $(document).on('ready page:load', function () {
     $('.modal').modal();
   });
 </script>

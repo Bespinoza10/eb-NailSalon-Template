@@ -1,0 +1,19 @@
+ <!-- <script type="text/javascript">
+   $(document).ready(function(){
+     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+     $('.modal').modal();
+   });
+ </script> -->
+<% @promotions.each do |p|%>
+  <!-- promotion-details-modal -->
+  <div id="promotion-modal" class="modal">
+    <div class="modal-content">
+      <br>
+      <h4><%= p.title%></h4>
+      <p><b>Details: </b><%= p.description %></p>
+    </div>
+    <div class="modal-footer">
+      <p>Click outside the box to EXIT.</p>
+    </div>
+  </div>
+<%end%>

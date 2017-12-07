@@ -1,0 +1,17 @@
+<% @promotions.each do |p|%>
+<div class="promotion row">
+
+  <div class="container">
+   <div class="col s12 m8 l8">
+      <p class="bold"><%= p.title%></p>
+   </div>
+   <div class="col s12 m4 l4">
+     <% if p.description.present? %>
+       <button data-target="promotion-modal" class="btn modal-trigger">View Details</button>
+       <!-- <a class="waves-effect waves-light btn modal-trigger" href="#promotion-modal">View Details</a> -->
+     <%end%>
+     <%= link_to "Edit", edit_promotion_path(p), class: "btn orange" %>
+   </div>
+  </div>
+</div>
+<%end%>
