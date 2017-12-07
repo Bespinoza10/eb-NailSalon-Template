@@ -22,7 +22,6 @@ class PromotionsController < ApplicationController
   end
 
   def edit
-
   end
 
   def update

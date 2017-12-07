@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @promotion = Promotion.all
+    @promotions = Promotion.all.order("created_at")
   end
 end
