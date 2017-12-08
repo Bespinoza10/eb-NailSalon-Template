@@ -36,7 +36,7 @@ class PromotionsController < ApplicationController
 
   def destroy
     @promotion.destroy
-    redirect_to promotion_path
+    redirect_to root_path, notice: "You have sucessfully DELETED your promotion."
   end
 
   private

@@ -6,6 +6,8 @@
         <hr>
       </div>
       <%= render 'form' %>
+      <h5>Would you like to DELETE this promotion?</h5>
+      <%= link_to "Delete", promotion_path(@promotion), method: :delete, data: {confirm: "Are you sure you want to DELETE this promotion?"}, class: "btn red" %>
     </div>
   </div>
 </div>
