@@ -141,6 +141,18 @@ button.verde{
 
 
 ///Media Queries
+@media screen and (max-width: 600px;){
+  div.promotion{
+    p.bold{
+      font-weight: 700;
+      letter-spacing: 4px;
+      font-size: 18px;
+      color:#fff;
+      margin: 0px;
+      line-height: 23px;
+    }
+  }
+}
 @media screen and (max-width: 800px){
   header.home-bg{
     background-image: url('/assets/mobile-home-bg.jpg');
